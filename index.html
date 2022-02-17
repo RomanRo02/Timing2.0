@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                'blue': '#48d1cc',
+                'red': '#b22222',
+                'green': '#228b22',
+                'brightgreen': '#6ae71a',
+            }
+        }
+    </script>
+</head>
+<body class="h-96 flex flex-col justify-center bg-blue-200 dark:bg-gray-800 duration-700">
+<div class="flex text-5xl h-full justify-center items-center px-20 animate-none">
+    <button class="basis-1/3 h-24  border-2 bg-green-300 border-green-500 hover:bg-green-500 rounded-l-full " type="button" id="startButton">Start</button>
+    <button class="basis-1/3 h-24  blue border-2 bg-yellow-300 border-yellow-500 rounded-none hover:bg-yellow-500" type="button" id="pauseButton">Pause</button>
+    <button class="basis-1/3 h-24  red border-2 bg-red-300 border-red-500 rounded-r-full hover:bg-red-500" type="button" id="stopButton">Stop</button>
+</div>
+
+<p id="timeBox" class="mx-auto text-5xl font-bold subpixel-antialiased dark:text-white duration-700">00:00:00</p>
+
+<button onclick="toggleDarkMode()" class="mx-auto bg-gray-700 h-20 w-64 text-blue-400 border-2 animate-pulse text-4xl rounded-full">Darkmode</button>
+
+<script src="index.js"></script>
+</body>
+</html>
